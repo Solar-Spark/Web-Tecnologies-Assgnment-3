@@ -37,6 +37,29 @@
             </div>
         </div>
     </nav>
+    <div class = "container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="col-md-6 form-container" style="background-color: #1c1c1c; padding: 30px; border-radius: 10px;">
+            <form action="/submit_contact" method="POST" class="form-horizontal">
+                <div class="form-group">
+                    <label for="name" class="text-light">Your Name</label>
+                    <input type="text" class="form-control" style="background-color: white; color: #333; border: none;" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-light">Your Email</label>
+                    <input type="email" class="form-control" style="background-color: white; color: #333; border: none;" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="text-light">Subject</label>
+                    <input type="text" class="form-control" style="background-color: white; color: #333; border: none;" id="subject" name="subject" placeholder="Enter the subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="text-light">Your Message</label>
+                    <textarea id="message" class="form-control" style="background-color: white; color: #333; border: none;" name="message" rows="4" placeholder="Write your message here" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger btn-block" style="background-color: red; border: none; margin-top: 50px;">Send Message</button>
+            </form>
+        </div>
+    </div>
     <footer class="bg-dark text-light text-center p-3 mt-5">
         <div class="container">
             <p>Abukhassym Khydyrbayev, Pavel Pertsev, Yernur Kazhyakpar</p>
